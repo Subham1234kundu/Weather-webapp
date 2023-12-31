@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="search-box">
+                <input id="inputBox" type="text" placeholder="Enter your city" class="">
+                <button onclick="getWeathersData(inputBox.value)" id="searchBtn" class="search-icon"><i class="bi bi-search"></i></button>
+            </div>
+        </div>
+
+     <div class="imgslot" id="imgslot">
+        <div class="for-error" id="forError">
+        <h2>sorry,location not found !!</h2>
+        <img src="/images/404.png" alt="" id="errorImg" height="100%" width="90%">
+        </div>
+
+        <img src="" alt="weatherImg"  class="weather-img" id="weatherImg">
+        </div>
+
+
+        <div class="weather-body" id="weather-body">
+            
+             
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+</html>
